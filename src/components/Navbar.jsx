@@ -11,7 +11,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex="-1"
-            className="dropdown-content flex flex-col gap-2.5 glass-blur rounded-box z-1 mt-7 w-52 p-4 shadow cursor-pointer"
+            className="dropdown-content flex flex-col gap-2.5 glass-blur rounded-box z-10 mt-7 w-52 p-4 shadow cursor-pointer"
           >
             <a className="hover:scale-105 transition-transform duration-300">
               Home

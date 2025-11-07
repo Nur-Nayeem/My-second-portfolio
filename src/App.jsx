@@ -2,16 +2,20 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
-    <div className="gradient-bg">
-      <header className="container mx-auto py-5">
-        <Navbar />
+    <div className="gradient-bg pb-13">
+      <header className="fixed top-4 w-full z-50">
+        <nav className="container mx-auto py-2">
+          <Navbar />
+        </nav>
       </header>
-      <main className="container mx-auto">
+      <main className="container mx-auto pt-32">
         <HeroSection />
         <AboutMe />
+        <Skills />
       </main>
     </div>
   );

@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className={`py-20 glass-blur transition-colors duration-300 rounded-2xl`}
+      className={`py-20 glass-blur transition-colors duration-300 rounded-2xl mt-10`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -36,7 +36,7 @@ const AboutMe = () => {
               </div>
               <div>
                 <h4 className="font-bold mb-2">Email</h4>
-                <p>nurnayem768@gmail.com</p>
+                <p className="wrap-break-word">nurnayem768@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-bold mb-2">Experience</h4>
