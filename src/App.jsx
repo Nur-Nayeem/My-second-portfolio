@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="flex justify-center items-center h-screen gradient-bg">
-      <h2>Hello</h2>
+    <div className="h-screen gradient-bg">
+      <header className="container mx-auto py-5">
+        <Navbar />
+      </header>
     </div>
   );
 };
