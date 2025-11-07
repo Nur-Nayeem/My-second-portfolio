@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
   return (
     <section
-      id="about"
+      id="skills"
       className={`py-20 glass-blur transition-colors duration-300 rounded-2xl mt-10`}
     >
       <div className="text-center mb-16">
