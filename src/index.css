@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, dark;
+}
+
+.gradient-bg {
+  background-color: #f6f5f8;
+  background-image: radial-gradient(
+      at 20% 10%,
+      hsla(278, 80%, 60%, 0.3) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 10%, rgba(117, 240, 240, 0.3) 0px, transparent 50%),
+    radial-gradient(at 20% 80%, rgba(240, 117, 158, 0.3) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(117, 179, 240, 0.3) 0px, transparent 50%);
+}
