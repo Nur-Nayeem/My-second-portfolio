@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
-@plugin "daisyui" {
-  themes: light --default, dark --prefersdark, dark;
-}
-
 @plugin "daisyui/theme" {
-  name: "mytheme";
+  name: "light";
   default: true;
   --color-primary: #9f62f2;
   --color-secondary: #001931;
@@ -22,6 +18,10 @@
 
 .active {
   @apply text-primary font-semibold;
+}
+
+.shadow-glow {
+  @apply shadow-[0_0_15px_2px_rgba(71,37,244,0.6)];
 }
 
 .gradient-bg {
