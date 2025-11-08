@@ -16,12 +16,18 @@ const HeroSection = () => {
         </p>
       </div>
       <div className="mt-8 flex justify-center items-center gap-4 flex-wrap">
-        <button className="btn-primary border border-primary/70 shadow-glow rounded-xl px-8 py-4 text-white font-bold hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <a
+          href="#contact"
+          className="btn-primary border border-primary/70 shadow-glow rounded-xl px-8 py-4 text-white font-bold hover:scale-105 transition-transform duration-300 cursor-pointer"
+        >
           Hire Me
-        </button>
-        <button className="glass-blur rounded-xl px-6 py-3.5 text-slate-900 font-bold hover:scale-105 transition-transform duration-300 cursor-pointer relative">
+        </a>
+        <a
+          href="#projects"
+          className="glass-blur rounded-xl px-6 py-3.5 text-slate-900 font-bold hover:scale-105 transition-transform duration-300 cursor-pointer relative"
+        >
           View Projects
-        </button>
+        </a>
       </div>
     </section>
   );

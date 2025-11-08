@@ -87,9 +87,12 @@ const Navbar = () => {
             Contact
           </a>
         </ul>
-        <button className="ml-8 btn-primary shadow-glow hover:scale-105 transition-transform duration-300 text-white h-10 px-4 rounded-lg font-bold cursor-pointer ">
+        <a
+          href="#contact"
+          className="ml-8 btn-primary shadow-glow hover:scale-105 transition-transform duration-300 text-white py-2 px-4 rounded-lg font-bold cursor-pointer "
+        >
           Hire Me
-        </button>
+        </a>
       </div>
     </div>
   );
