@@ -1,4 +1,5 @@
 import React from "react";
+import { skills } from "../data/myData";
 
 const Skills = () => {
   return (
@@ -11,18 +12,18 @@ const Skills = () => {
         <div className="w-20 h-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] mx-auto"></div>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-6xl mx-auto px-4">
-        {Array.from({ length: 10 }).map((_, index) => (
+        {skills.map((skill, index) => (
           <div
             key={index}
             className="flex flex-col items-center p-4 glass-blur rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+              src={skill.img}
               alt=""
               className="w-16 h-16 object-contain mb-3"
             />
             <p className="text-lg font-medium text-gray-800 text-center">
-              React JS
+              {skill.name}
             </p>
           </div>
         ))}
