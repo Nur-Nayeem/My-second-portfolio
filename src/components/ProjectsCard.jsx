@@ -12,12 +12,14 @@ const ProjectsCard = ({
   githubLink,
 }) => {
   return (
-    <div class="flex flex-col glass-blur p-6 rounded-xl overflow-hidden">
-      <img class="w-full h-48 bg-cover bg-center rounded-lg" src={image} />
-      <div class="flex flex-col gap-3 mt-4">
-        <h3 class="text-slate-900 text-xl font-bold">{title}</h3>
-        <p class="text-slate-600 text-sm">{description.slice(0, 82) + "..."}</p>
-        <div class="flex flex-wrap gap-2 mt-2">
+    <div className="flex flex-col glass-blur p-6 rounded-xl overflow-hidden hover:shadow-2xl hover:scale-102 transition-all duration-300 h-full">
+      <img className="w-full h-48 bg-cover bg-center rounded-lg" src={image} />
+      <div className="flex flex-col justify-between max-h-60 h-full gap-3 mt-4">
+        <h3 className="text-slate-900 text-xl font-bold">{title}</h3>
+        <p className="text-slate-600 text-sm">
+          {description.slice(0, 82) + "..."}
+        </p>
+        <div className="flex flex-wrap gap-2 mt-2">
           {technologies.map((tech, index) => (
             <span
               key={index}
@@ -32,7 +34,7 @@ const ProjectsCard = ({
             href={demoLink ? demoLink : downloadLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary hover:scale-105 text-white py-2 px-4 rounded-lg transition-all duration-300 text-sm flex items-center gap-2 rounded-button cursor-pointer"
+            className="bg-primary/90 hover:bg-primary hover:scale-105 text-white py-2 px-4 rounded-lg transition-all duration-300 text-sm flex items-center gap-2 rounded-button cursor-pointer"
           >
             <BiLinkExternal />{" "}
             <span>{demoLink ? "Live Demo" : "Download Link"}</span>
