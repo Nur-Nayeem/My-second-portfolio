@@ -45,25 +45,37 @@ const Footer = () => {
 
           <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-4">
             <li>
-              <button className="text-gray-600 hover:text-primary transition-colors duration-300 cursor-pointer">
+              <a
+                href="#hero"
+                className="text-gray-600 hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
                 Home
-              </button>
+              </a>
             </li>
             <li>
-              <button className="text-gray-600 hover:text-primary transition-colors duration-300 cursor-pointer">
+              <a
+                href="#about"
+                className="text-gray-600 hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
                 About
-              </button>
+              </a>
             </li>
             <li>
-              <button className="text-gray-600 hover:text-primary transition-colors duration-300 cursor-pointer">
+              <a
+                href="#projects"
+                className="text-gray-600 hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
                 Projects
-              </button>
+              </a>
             </li>
 
             <li>
-              <button className="text-gray-600 hover:text-primary transition-colors duration-300 cursor-pointer">
+              <a
+                href="#contact"
+                className="text-gray-600 hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
                 Contact
-              </button>
+              </a>
             </li>
           </ul>
         </div>

@@ -10,8 +10,8 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <div className="gradient-bg">
-      <header className="fixed top-4 w-full z-50">
-        <nav className="container mx-auto py-2">
+      <header className="fixed top-2 w-full z-50">
+        <nav className="container mx-auto">
           <Navbar />
         </nav>
       </header>

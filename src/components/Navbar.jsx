@@ -13,48 +13,77 @@ const Navbar = () => {
             tabIndex="-1"
             className="dropdown-content flex flex-col gap-2.5 glass-blur rounded-box z-10 mt-7 w-52 p-4 shadow cursor-pointer"
           >
-            <a className="hover:scale-105 transition-transform duration-300">
+            <a
+              href="#hero"
+              className="hover:scale-105 hover:text-primary transition-all duration-300"
+            >
               Home
             </a>
 
-            <a className="hover:scale-105 transition-transform duration-300">
+            <a
+              href="#about"
+              className="hover:scale-105 hover:text-primary transition-all duration-300"
+            >
               About
             </a>
 
-            <a className="hover:scale-105 transition-transform duration-300">
+            <a
+              href="#skills"
+              className="hover:scale-105 hover:text-primary transition-all duration-300"
+            >
               Skill
             </a>
 
-            <a className="hover:scale-105 transition-transform duration-300">
+            <a
+              href="#projects"
+              className="hover:scale-105 hover:text-primary transition-all duration-300"
+            >
               Projects
             </a>
 
-            <a className="hover:scale-105 transition-transform duration-300">
+            <a
+              href="#contact"
+              className="hover:scale-105 hover:text-primary transition-all duration-300"
+            >
               Contact
             </a>
           </ul>
         </div>
-        <a className="text-xl">Nur Nayeem</a>
+        <a className="text-xl font-bold">Nur Nayeem</a>
       </div>
       <div className="flex">
         <ul className="hidden lg:flex justify-center items-center gap-8 cursor-pointer">
-          <a className="hover:scale-105 transition-transform duration-300">
+          <a
+            href="#hero"
+            className="hover:scale-105 hover:text-primary transition-all duration-300"
+          >
             Home
           </a>
-
-          <a className="hover:scale-105 transition-transform duration-300">
+          <a
+            href="#about"
+            className="hover:scale-105 hover:text-primary transition-all duration-300"
+          >
             About
           </a>
 
-          <a className="hover:scale-105 transition-transform duration-300">
-            Skill
+          <a
+            href="#skills"
+            className="hover:scale-105 hover:text-primary transition-all duration-300"
+          >
+            Skills
           </a>
 
-          <a className="hover:scale-105 transition-transform duration-300">
+          <a
+            href="#projects"
+            className="hover:scale-105 hover:text-primary transition-all duration-300"
+          >
             Projects
           </a>
 
-          <a className="hover:scale-105 transition-transform duration-300">
+          <a
+            href="#contact"
+            className="hover:scale-105 hover:text-primary transition-all duration-300"
+          >
             Contact
           </a>
         </ul>
