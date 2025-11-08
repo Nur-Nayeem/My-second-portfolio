@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
   FaGithub,
   FaLinkedin,
@@ -10,6 +11,28 @@ import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
+  const formRef = useRef();
+  const handleContact = (e) => {
+    e.preventDefault();
+    if (!formRef.current) return;
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          formRef.current?.reset();
+          console.log("email send successfully");
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+        }
+      );
+  };
   return (
     <section
       id="contact"
@@ -99,7 +122,11 @@ const Contact = () => {
             </div>
           </div>
           <div className="lg:col-span-3">
-            <form className="p-8 rounded-xl shadow-lg glass-blur">
+            <form
+              ref={formRef}
+              onSubmit={handleContact}
+              className="p-8 rounded-xl shadow-lg glass-blur"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label
