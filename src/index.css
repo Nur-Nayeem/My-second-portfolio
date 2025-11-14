@@ -12,6 +12,14 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 86px;
+}
+.gradient-text {
+  @apply bg-linear-to-r from-[#632ee3] to-[#9f62f2] bg-clip-text text-transparent;
+}
+
 .btn-primary {
   @apply bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-base-100 border-0;
 }

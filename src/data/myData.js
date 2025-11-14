@@ -64,6 +64,17 @@ export const projects = [
   },
   {
     id: 2,
+    title: "PawsMart",
+    description:
+      "PawMart is a modern React-based marketplace for pets and pet-related products, designed to help pet lovers adopt pets, buy pet food, accessories, and care products, all in one place.",
+    technologies: ["React.js", "Node.js", "Express", "MongoDB"],
+    image: "https://i.ibb.co.com/hFZtWv4G/rsz-undefined-1.png",
+    demoLink: "https://pawsmart-79833.web.app/",
+    githubLink:
+      "https://github.com/Nur-Nayeem/PawMart-Client-Assignment-10-Programming-Hero",
+  },
+  {
+    id: 3,
     title: "Ai Image Generator",
     description:
       "Transforms text prompts into high-resolution images in various styles using advanced AI.",
@@ -74,7 +85,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "E-library With Audio Books",
     description:
       "A modern E-Library app built with Flutter, offering eBooks and audiobooks with a smooth, cross-platform experience.",
@@ -85,7 +96,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/E_library_with_Audio_Books",
   },
   {
-    id: 4,
+    id: 5,
     title: "Image Search App",
     description:
       "A lightweight image search app using HTML, CSS, and JavaScript with full responsive support",
@@ -96,7 +107,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/Image-Search-API-App",
   },
   {
-    id: 5,
+    id: 6,
     title: "Smart Deals",
     description: "A Local Online Marketplace for Buying & Selling with Bids",
     technologies: ["React.js", "Node.js", "Express", "MongoDB", "Firebase"],
@@ -106,7 +117,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/smart-deals",
   },
   {
-    id: 6,
+    id: 7,
     title: "WarmPaws The Pet Service Platform",
     description:
       "A cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season",
@@ -117,7 +128,7 @@ export const projects = [
       "https://github.com/Nur-Nayeem/warm-Paws-pet-service-system-assignment-9-programming-hero",
   },
   {
-    id: 7,
+    id: 8,
     title: "App Downloading Demo Website",
     description:
       "APEX.IO is a React-based frontend website that lets users search, browse, and install Android and iOS apps. Installed apps can be viewed later on the 'Installed Apps' page.",
@@ -130,7 +141,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Plant Shop",
     description: "A Simple front end Plant selling web app",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -140,7 +151,7 @@ export const projects = [
       "https://github.com/Nur-Nayeem/green-earth-programming-hero-assignment-6",
   },
   {
-    id: 9,
+    id: 10,
     title: "BBC News API Web App",
     description: "A simple news api app",
     technologies: ["HTML", "CSS", "JavaScript"],
