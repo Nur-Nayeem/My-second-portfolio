@@ -83,7 +83,7 @@ export const projects = [
     technologies: ["Next.js", "Next Auth", "Node.js", "Express", "MongoDB"],
     image:
       "https://i.ibb.co.com/Pv7g789D/Screenshot-from-2025-11-29-17-38-37.png",
-    demoLink: "course-lab-project-nextjs.vercel.app",
+    demoLink: "https://course-lab-project-nextjs.vercel.app/",
     githubLink: "https://github.com/Nur-Nayeem/course-lab-project-nextjs",
   },
 
