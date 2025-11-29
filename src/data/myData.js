@@ -57,7 +57,7 @@ export const projects = [
     title: "PawMart",
     description:
       "PawMart is a modern React-based marketplace for pets and pet-related products, designed to help pet lovers adopt pets, buy pet food, accessories, and care products, all in one place.",
-    technologies: ["React.js", "Node.js", "Express", "MongoDB"],
+    technologies: ["React.js", "Firebase", "Node.js", "Express", "MongoDB"],
     image:
       "https://i.ibb.co.com/dJWhm3sm/rsz-1screenshot-from-2025-11-19-00-29-02.jpg",
     demoLink: "https://pawsmart-79833.web.app/",
@@ -70,14 +70,25 @@ export const projects = [
     title: "Blogging Application",
     description:
       "A full-stack blogging application with user authentication, blog management, and user interaction.",
-    technologies: ["React.js", "Node.js", "Express", "MongoDB"],
+    technologies: ["React.js", "Firebase", "Node.js", "Express", "MongoDB"],
     image: "https://i.ibb.co.com/6RrLTQ46/blogging-web.png",
     demoLink: "https://bloggerthoughts.netlify.app/",
     githubLink: "https://github.com/Nur-Nayeem/MERN-BLOGGING-WEB-APP",
   },
-
   {
     id: 3,
+    title: "Course Lab",
+    description:
+      "A course marketplace where users can browse and manage courses with authentication (NextAuth).",
+    technologies: ["Next.js", "Next Auth", "Node.js", "Express", "MongoDB"],
+    image:
+      "https://i.ibb.co.com/Pv7g789D/Screenshot-from-2025-11-29-17-38-37.png",
+    demoLink: "course-lab-project-nextjs.vercel.app",
+    githubLink: "https://github.com/Nur-Nayeem/course-lab-project-nextjs",
+  },
+
+  {
+    id: 4,
     title: "Smart Deals",
     description: "A Local Online Marketplace for Buying & Selling with Bids",
     technologies: ["React.js", "Node.js", "Express", "MongoDB", "Firebase"],
@@ -87,7 +98,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/smart-deals",
   },
   {
-    id: 4,
+    id: 5,
     title: "WarmPaws The Pet Service Platform",
     description:
       "A cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season",
@@ -99,7 +110,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Image Search App",
     description:
       "A lightweight image search app using HTML, CSS, and JavaScript with full responsive support",
@@ -111,7 +122,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "App Downloading Demo Website",
     description:
       "APEX.IO is a React-based frontend website that lets users search, browse, and install Android and iOS apps. Installed apps can be viewed later on the 'Installed Apps' page.",
@@ -123,7 +134,7 @@ export const projects = [
       "https://github.com/Nur-Nayeem/apex.io-hero.io-assignment-8-programming-hero",
   },
   {
-    id: 7,
+    id: 8,
     title: "Dragon News Website",
     description: "A React-based frontend website that lets user read news",
     technologies: ["React.js", "React-Router", "Firebase"],
@@ -134,7 +145,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Plant Shop",
     description: "A Simple front end Plant selling web app",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -144,7 +155,7 @@ export const projects = [
       "https://github.com/Nur-Nayeem/green-earth-programming-hero-assignment-6",
   },
   {
-    id: 9,
+    id: 10,
     title: "BBC News API Web App",
     description: "A simple news api app",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -154,7 +165,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/bbc-new-bangla",
   },
   {
-    id: 10,
+    id: 11,
     title: "Ai Image Generator",
     description:
       "Transforms text prompts into high-resolution images in various styles using advanced AI.",
@@ -164,7 +175,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/Ai-Img-gen",
   },
   {
-    id: 11,
+    id: 12,
     title: "E-library With Audio Books",
     description:
       "A modern E-Library app built with Flutter, offering eBooks and audiobooks with a smooth, cross-platform experience.",
