@@ -1,7 +1,7 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaDownload, FaLinkedin } from "react-icons/fa";
-
+import resume from "../data/resume.pdf";
 const AboutMe = () => {
   return (
     <section
@@ -64,7 +64,8 @@ const AboutMe = () => {
                 <FaLinkedin /> <span className="hidden sm:block">LinkedIn</span>
               </a>
               <a
-                href={""}
+                href={resume}
+                download="Nur-Nayeem-Resume.pdf"
                 className="bg-primary/90 hover:bg-primary text-white py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 rounded-button cursor-pointer"
               >
                 <FaDownload /> <span className="hidden sm:block">Resume</span>
