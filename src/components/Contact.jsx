@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   FaGithub,
@@ -9,11 +9,26 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    },
+  });
+
   const handleContact = (e) => {
     e.preventDefault();
+    setLoading(true);
     if (!formRef.current) return;
 
     emailjs
@@ -26,10 +41,18 @@ const Contact = () => {
       .then(
         () => {
           formRef.current?.reset();
-          console.log("email send successfully");
+          setLoading(false);
+          Toast.fire({
+            icon: "success",
+            title: "Email send successfully",
+          });
         },
         (error) => {
-          console.error("EmailJS Error:", error);
+          setLoading(false);
+          Toast.fire({
+            icon: "success",
+            title: `EmailJS Error:${error}`,
+          });
         }
       );
   };
@@ -197,9 +220,10 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
+                disabled={loading}
                 className="w-full btn-primary text-white font-medium py-3 px-6 rounded-lg shadow-md hover:shadow-lg hover:scale-102 transition-all duration-300 cursor-pointer"
               >
-                Send Message
+                {loading ? "Loading..." : "Send Message"}
               </button>
             </form>
           </div>
