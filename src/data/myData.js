@@ -54,6 +54,19 @@ export const skills = [
 export const projects = [
   {
     id: 1,
+    title: "PawMart",
+    description:
+      "PawMart is a modern React-based marketplace for pets and pet-related products, designed to help pet lovers adopt pets, buy pet food, accessories, and care products, all in one place.",
+    technologies: ["React.js", "Node.js", "Express", "MongoDB"],
+    image:
+      "https://i.ibb.co.com/dJWhm3sm/rsz-1screenshot-from-2025-11-19-00-29-02.jpg",
+    demoLink: "https://pawsmart-79833.web.app/",
+    githubLink:
+      "https://github.com/Nur-Nayeem/PawMart-Client-Assignment-10-Programming-Hero",
+  },
+
+  {
+    id: 2,
     title: "Blogging Application",
     description:
       "A full-stack blogging application with user authentication, blog management, and user interaction.",
@@ -62,39 +75,29 @@ export const projects = [
     demoLink: "https://bloggerthoughts.netlify.app/",
     githubLink: "https://github.com/Nur-Nayeem/MERN-BLOGGING-WEB-APP",
   },
-  {
-    id: 2,
-    title: "PawsMart",
-    description:
-      "PawMart is a modern React-based marketplace for pets and pet-related products, designed to help pet lovers adopt pets, buy pet food, accessories, and care products, all in one place.",
-    technologies: ["React.js", "Node.js", "Express", "MongoDB"],
-    image: "https://i.ibb.co.com/hFZtWv4G/rsz-undefined-1.png",
-    demoLink: "https://pawsmart-79833.web.app/",
-    githubLink:
-      "https://github.com/Nur-Nayeem/PawMart-Client-Assignment-10-Programming-Hero",
-  },
-  {
-    id: 3,
-    title: "Ai Image Generator",
-    description:
-      "Transforms text prompts into high-resolution images in various styles using advanced AI.",
-    technologies: ["React.js", "Node.js", "Express", "MongoDB", "Mongoose"],
-    image: "https://i.ibb.co.com/TBNpyzn8/aiiii.png",
-    demoLink: "https://image-gen-422.web.app/",
-    githubLink: "https://github.com/Nur-Nayeem/Ai-Img-gen",
-  },
 
   {
-    id: 4,
-    title: "E-library With Audio Books",
-    description:
-      "A modern E-Library app built with Flutter, offering eBooks and audiobooks with a smooth, cross-platform experience.",
-    technologies: ["Dart", "Flutter", "Supabase"],
-    image: "https://i.ibb.co.com/cKYB54jF/audio-book-1.jpg",
-    downloadLink:
-      "https://drive.google.com/drive/folders/1clrdlOuxu8c_kKOKPp_xP4EsrjYCyYW7",
-    githubLink: "https://github.com/Nur-Nayeem/E_library_with_Audio_Books",
+    id: 3,
+    title: "Smart Deals",
+    description: "A Local Online Marketplace for Buying & Selling with Bids",
+    technologies: ["React.js", "Node.js", "Express", "MongoDB", "Firebase"],
+    image:
+      "https://i.ibb.co.com/W4Lj4wx7/Screenshot-from-2025-11-08-18-02-00.png",
+    demoLink: "https://smart-deals-b3ad6.web.app/",
+    githubLink: "https://github.com/Nur-Nayeem/smart-deals",
   },
+  {
+    id: 4,
+    title: "WarmPaws The Pet Service Platform",
+    description:
+      "A cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season",
+    technologies: ["React.js", "Firebase"],
+    image: "https://i.ibb.co.com/21p2dzn1/rsz-1paws.jpg",
+    demoLink: "https://warmpaws-2c2b2.web.app/",
+    githubLink:
+      "https://github.com/Nur-Nayeem/warm-Paws-pet-service-system-assignment-9-programming-hero",
+  },
+
   {
     id: 5,
     title: "Image Search App",
@@ -106,29 +109,9 @@ export const projects = [
     demoLink: "https://nur-nayeem.github.io/Image-Search-API-App/",
     githubLink: "https://github.com/Nur-Nayeem/Image-Search-API-App",
   },
+
   {
     id: 6,
-    title: "Smart Deals",
-    description: "A Local Online Marketplace for Buying & Selling with Bids",
-    technologies: ["React.js", "Node.js", "Express", "MongoDB", "Firebase"],
-    image:
-      "https://i.ibb.co.com/W4Lj4wx7/Screenshot-from-2025-11-08-18-02-00.png",
-    demoLink: "https://smart-deals-b3ad6.web.app/",
-    githubLink: "https://github.com/Nur-Nayeem/smart-deals",
-  },
-  {
-    id: 7,
-    title: "WarmPaws The Pet Service Platform",
-    description:
-      "A cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season",
-    technologies: ["React.js", "Firebase"],
-    image: "https://i.ibb.co.com/21p2dzn1/rsz-1paws.jpg",
-    demoLink: "https://warmpaws-2c2b2.web.app/",
-    githubLink:
-      "https://github.com/Nur-Nayeem/warm-Paws-pet-service-system-assignment-9-programming-hero",
-  },
-  {
-    id: 8,
     title: "App Downloading Demo Website",
     description:
       "APEX.IO is a React-based frontend website that lets users search, browse, and install Android and iOS apps. Installed apps can be viewed later on the 'Installed Apps' page.",
@@ -139,9 +122,19 @@ export const projects = [
     githubLink:
       "https://github.com/Nur-Nayeem/apex.io-hero.io-assignment-8-programming-hero",
   },
+  {
+    id: 7,
+    title: "Dragon News Website",
+    description: "A React-based frontend website that lets user read news",
+    technologies: ["React.js", "React-Router", "Firebase"],
+    image:
+      "https://i.ibb.co.com/Wvt1JFQ8/Screenshot-from-2025-11-29-16-01-31.png",
+    demoLink: "https://dragon-news-react-nur-nayeem.pages.dev/",
+    githubLink: "https://github.com/Nur-Nayeem/Dragon-News-React-Project",
+  },
 
   {
-    id: 9,
+    id: 8,
     title: "Plant Shop",
     description: "A Simple front end Plant selling web app",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -151,7 +144,7 @@ export const projects = [
       "https://github.com/Nur-Nayeem/green-earth-programming-hero-assignment-6",
   },
   {
-    id: 10,
+    id: 9,
     title: "BBC News API Web App",
     description: "A simple news api app",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -159,5 +152,26 @@ export const projects = [
       "https://i.ibb.co.com/SX2fVntw/Screenshot-from-2025-11-08-18-06-12.png",
     demoLink: "https://98e69a37.bbc-news-bangla-test.pages.dev/",
     githubLink: "https://github.com/Nur-Nayeem/bbc-new-bangla",
+  },
+  {
+    id: 10,
+    title: "Ai Image Generator",
+    description:
+      "Transforms text prompts into high-resolution images in various styles using advanced AI.",
+    technologies: ["React.js", "Node.js", "Express", "MongoDB", "Mongoose"],
+    image: "https://i.ibb.co.com/TBNpyzn8/aiiii.png",
+    demoLink: "https://image-gen-422.web.app/",
+    githubLink: "https://github.com/Nur-Nayeem/Ai-Img-gen",
+  },
+  {
+    id: 11,
+    title: "E-library With Audio Books",
+    description:
+      "A modern E-Library app built with Flutter, offering eBooks and audiobooks with a smooth, cross-platform experience.",
+    technologies: ["Dart", "Flutter", "Supabase"],
+    image: "https://i.ibb.co.com/cKYB54jF/audio-book-1.jpg",
+    downloadLink:
+      "https://drive.google.com/drive/folders/1clrdlOuxu8c_kKOKPp_xP4EsrjYCyYW7",
+    githubLink: "https://github.com/Nur-Nayeem/E_library_with_Audio_Books",
   },
 ];
