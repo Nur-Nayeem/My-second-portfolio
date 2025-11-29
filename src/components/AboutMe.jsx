@@ -57,7 +57,7 @@ const AboutMe = () => {
                 <BsGithub /> <span className="hidden sm:block">GitHub</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/nur-mohammad-nayeem-803091352/"
+                href="https://www.linkedin.com/in/nur-mohammad-nayeem/"
                 target="_blank"
                 className="bg-primary/90 hover:bg-primary text-white py-2 px-4 rounded-lg transition-colors duration-300 flex justify-center items-center gap-2 rounded-button cursor-pointer"
               >
