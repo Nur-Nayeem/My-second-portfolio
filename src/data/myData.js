@@ -77,6 +77,17 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Course Master",
+    description:
+      "Course Master is a MERN stack platform where users can watch video lessons, track progress, take quizzes, and submit assignments, while admins manage courses and analytics.",
+    technologies: ["React.js", "Node.js", "Express", "MongoDB"],
+    image:
+      "https://i.ibb.co.com/hFgQbXrH/Screenshot-from-2025-12-06-01-26-09.png",
+    demoLink: "https://course-master-nur-nayeem.netlify.app/",
+    githubLink: "https://github.com/Nur-Nayeem/course-master-full-stack-web",
+  },
+  {
+    id: 4,
     title: "Course Lab",
     description:
       "A course marketplace where users can browse and manage courses with authentication (NextAuth).",
@@ -88,7 +99,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Smart Deals",
     description: "A Local Online Marketplace for Buying & Selling with Bids",
     technologies: ["React.js", "Node.js", "Express", "MongoDB", "Firebase"],
@@ -98,7 +109,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/smart-deals",
   },
   {
-    id: 5,
+    id: 6,
     title: "WarmPaws The Pet Service Platform",
     description:
       "A cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season",
@@ -110,7 +121,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Image Search App",
     description:
       "A lightweight image search app using HTML, CSS, and JavaScript with full responsive support",
@@ -122,7 +133,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "App Downloading Demo Website",
     description:
       "APEX.IO is a React-based frontend website that lets users search, browse, and install Android and iOS apps. Installed apps can be viewed later on the 'Installed Apps' page.",
@@ -134,7 +145,7 @@ export const projects = [
       "https://github.com/Nur-Nayeem/apex.io-hero.io-assignment-8-programming-hero",
   },
   {
-    id: 8,
+    id: 9,
     title: "Dragon News Website",
     description: "A React-based frontend website that lets user read news",
     technologies: ["React.js", "React-Router", "Firebase"],
@@ -145,7 +156,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: "Plant Shop",
     description: "A Simple front end Plant selling web app",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -155,7 +166,7 @@ export const projects = [
       "https://github.com/Nur-Nayeem/green-earth-programming-hero-assignment-6",
   },
   {
-    id: 10,
+    id: 11,
     title: "BBC News API Web App",
     description: "A simple news api app",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -165,7 +176,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/bbc-new-bangla",
   },
   {
-    id: 11,
+    id: 12,
     title: "Ai Image Generator",
     description:
       "Transforms text prompts into high-resolution images in various styles using advanced AI.",
@@ -175,7 +186,7 @@ export const projects = [
     githubLink: "https://github.com/Nur-Nayeem/Ai-Img-gen",
   },
   {
-    id: 12,
+    id: 13,
     title: "E-library With Audio Books",
     description:
       "A modern E-Library app built with Flutter, offering eBooks and audiobooks with a smooth, cross-platform experience.",

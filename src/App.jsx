@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <div className="gradient-bg">
-      <header className="sticky top-2 w-full z-50">
+      <header className="sticky top-1 w-full z-50">
         <nav className="container mx-auto">
           <Navbar />
         </nav>
