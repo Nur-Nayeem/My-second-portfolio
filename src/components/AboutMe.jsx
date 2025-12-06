@@ -1,20 +1,55 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
-import { FaDownload, FaLinkedin } from "react-icons/fa";
+import {
+  FaDownload,
+  FaLinkedin,
+  FaProjectDiagram,
+  FaLaptopCode,
+  FaClock,
+} from "react-icons/fa";
+
 import resume from "../data/resume.pdf";
+
 const AboutMe = () => {
+  const cards = [
+    {
+      title: "My Services",
+      description:
+        "Full-stack development with a focus on MERN stack projects.",
+      icon: <FaLaptopCode className="text-3xl text-primary" />,
+    },
+    {
+      title: "Projects Completed",
+      description: "Successfully Completed 20+ web applications.",
+      icon: <FaProjectDiagram className="text-3xl text-primary" />,
+    },
+    {
+      title: "Experience",
+      description:
+        "1 year of hands-on experience building real-world projects.",
+      icon: <BsGithub className="text-3xl text-primary" />,
+    },
+    {
+      title: "Support",
+      description: "Available 24/7 to assist with queries and project needs.",
+      icon: <FaClock className="text-3xl text-primary" />,
+    },
+  ];
+
   return (
     <section
       id="about"
-      className={`py-12 glass-blur transition-colors duration-300 rounded-2xl mt-10`}
+      className="py-12 glass-blur transition-colors duration-300 rounded-2xl mt-10"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-20 h-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] mx-auto"></div>
         </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="order-2 lg:order-1">
+          {/* Left: About text */}
+          <div>
             <h3 className="text-2xl font-bold mb-4">Who am I?</h3>
             <p className="text-lg mb-6 leading-relaxed">
               I'm a passionate aspiring full-stack developer focusing on the
@@ -29,6 +64,7 @@ const AboutMe = () => {
               technologies to build scalable, performant applications that solve
               real-world problems.
             </p>
+
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div>
                 <h4 className="font-bold mb-2">Location</h4>
@@ -36,7 +72,7 @@ const AboutMe = () => {
               </div>
               <div>
                 <h4 className="font-bold mb-2">Email</h4>
-                <p className="wrap-break-word">nurnayem768@gmail.com</p>
+                <p className="break-words">nurnayem768@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-bold mb-2">Experience</h4>
@@ -47,48 +83,47 @@ const AboutMe = () => {
                 <p>Freelance & Full-time</p>
               </div>
             </div>
-            <div className="flex gap-4 items-center">
+
+            <div className="flex gap-4 items-center mb-8">
               <a
                 href="https://github.com/nur-nayeem"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 flex justify-center items-center gap-2  rounded-button cursor-pointer "
+                className="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 flex justify-center items-center gap-2"
               >
                 <BsGithub /> <span className="hidden sm:block">GitHub</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/nur-mohammad-nayeem/"
                 target="_blank"
-                className="bg-primary/90 hover:bg-primary text-white py-2 px-4 rounded-lg transition-colors duration-300 flex justify-center items-center gap-2 rounded-button cursor-pointer"
+                className="bg-primary/90 hover:bg-primary text-white py-2 px-4 rounded-lg transition-colors duration-300 flex justify-center items-center gap-2"
               >
                 <FaLinkedin /> <span className="hidden sm:block">LinkedIn</span>
               </a>
               <a
                 href={resume}
                 download="Nur-Nayeem-Resume.pdf"
-                className="bg-primary/90 hover:bg-primary text-white py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 rounded-button cursor-pointer"
+                className="bg-primary/90 hover:bg-primary text-white py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2"
               >
                 <FaDownload /> <span className="hidden sm:block">Resume</span>
               </a>
             </div>
           </div>
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full p-[3px] bg-linear-to-r from-[#632EE3] to-[#9F62F2] shadow-glow">
-                <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 overflow-hidden">
-                  <img
-                    src={
-                      "https://avatars.githubusercontent.com/u/109820227?v=4"
-                    }
-                    alt="Nur Nayeem"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
+
+          {/* Right: Cards */}
+          <div className="grid grid-cols-2 gap-4">
+            {cards.map((card, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center p-4 glass-blur rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="mb-2">{card.icon}</div>
+                <h3 className="text-lg font-bold mb-1">{card.title}</h3>
+                <p className="text-gray-600 text-sm text-center">
+                  {card.description}
+                </p>
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white text-sm font-bold py-2 px-4 rounded-lg shadow-lg">
-                MERN Developer
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

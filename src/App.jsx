@@ -15,7 +15,7 @@ const App = () => {
           <Navbar />
         </nav>
       </header>
-      <main className="container mx-auto pt-32">
+      <main className="container mx-auto">
         <HeroSection />
         <AboutMe />
         <Skills />
