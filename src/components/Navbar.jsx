@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
-const sections = ["home", "about", "skills", "projects", "contact"];
+const sections = [
+  "home",
+  "about",
+  "skills",
+  "education",
+  "projects",
+  "contact",
+];
 
 const Navbar = () => {
   const [active, setActive] = useState("home");

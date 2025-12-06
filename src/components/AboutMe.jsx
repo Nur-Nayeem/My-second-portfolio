@@ -72,7 +72,7 @@ const AboutMe = () => {
               </div>
               <div>
                 <h4 className="font-bold mb-2">Email</h4>
-                <p className="break-words">nurnayem768@gmail.com</p>
+                <p className="wrap-break-word">nurnayem768@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-bold mb-2">Experience</h4>
