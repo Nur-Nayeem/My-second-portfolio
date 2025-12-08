@@ -149,7 +149,7 @@ const Contact = () => {
             <form
               ref={formRef}
               onSubmit={handleContact}
-              className="p-8 rounded-xl shadow-lg glass-blur"
+              className="p-8 rounded-xl glass-blur"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                 <div>
@@ -163,7 +163,7 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full px-4 py-3 rounded-lg bg-gray-200/60 border-gray-300 text-gray-900 focus:outline-primary"
+                    className="w-full px-4 py-3 rounded-lg glass-blur text-gray-900 focus:outline-primary"
                     placeholder="Your Name"
                     required
                   />
@@ -179,7 +179,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 rounded-lg bg-gray-200/60  border-gray-300 text-gray-900 focus:outline-primary"
+                    className="w-full px-4 py-3 rounded-lg glass-blur  text-gray-900 focus:outline-primary"
                     placeholder="Your Email"
                     required
                   />
@@ -197,7 +197,7 @@ const Contact = () => {
                   id="subject"
                   name="subject"
                   className={
-                    "w-full px-4 py-3 rounded-lg bg-gray-200/60 border-gray-300 text-gray-900 focus:outline-primary "
+                    "w-full px-4 py-3 rounded-lg glass-blur text-gray-900 focus:outline-primary "
                   }
                   placeholder="Subject"
                   required
@@ -214,7 +214,7 @@ const Contact = () => {
                   id="message"
                   name="message"
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg bg-gray-200/60  border-gray-300 text-gray-900 focus:outline-primary"
+                  className="w-full px-4 py-3 rounded-lg glass-blur  text-gray-900 focus:outline-primary"
                   placeholder="Your Message"
                   required
                 ></textarea>
