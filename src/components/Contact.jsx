@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
+  FaFacebook,
   FaGithub,
   FaLinkedin,
   FaMapMarkerAlt,
@@ -59,7 +60,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-12 glass-blur transition-colors duration-300 rounded-2xl mt-10"
+      className="py-12 transition-colors duration-300 rounded-2xl mt-10"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -137,10 +138,10 @@ const Contact = () => {
                 href="https://medium.com/@username"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white p-3 rounded-full transition-colors duration-300 cursor-pointer"
+                className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition-colors duration-300 cursor-pointer"
                 aria-label="Medium"
               >
-                <FaMedium />
+                <FaFacebook />
               </a>
             </div>
           </div>

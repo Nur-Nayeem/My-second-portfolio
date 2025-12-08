@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="glass-blur rounded-2xl flex justify-between items-center py-4 px-2.5 md:px-10">
+    <div className="glass-blur shadow-xs rounded-2xl flex justify-between items-center py-4 px-2.5 md:px-10">
       <div className="flex justify-center items-center gap-2">
         <a className="text-xl font-bold gradient-text">NUR NAYEEM</a>
       </div>

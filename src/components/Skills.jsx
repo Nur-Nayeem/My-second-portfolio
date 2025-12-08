@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className={`py-12 glass-blur transition-colors duration-300 rounded-2xl mt-10`}
+      className={`py-12 transition-colors duration-300 rounded-2xl mt-10`}
     >
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">My Skills</h2>
@@ -15,7 +15,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 glass-blur rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="flex flex-col items-center p-4 glass-blur rounded-lg shadow-md hover:shadow-[0_0_15px_2px_rgba(71,37,244,0.6)] transition-shadow duration-300"
           >
             <img
               src={skill.img}

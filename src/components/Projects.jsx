@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className={`py-12 glass-blur transition-colors duration-300 rounded-2xl mt-10`}
+      className={`py-12 transition-colors duration-300 rounded-2xl mt-10`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -17,7 +17,7 @@ const Projects = () => {
             demonstrates different aspects of full-stack development.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12">
           {projects.map((project) => (
             <ProjectsCard
               key={project.id}

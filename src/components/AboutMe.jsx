@@ -39,7 +39,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="py-12 glass-blur transition-colors duration-300 rounded-2xl mt-10"
+      className="py-12 transition-colors duration-300 rounded-2xl mt-10"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -52,17 +52,13 @@ const AboutMe = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Who am I?</h3>
             <p className="text-lg mb-6 leading-relaxed">
-              I'm a passionate aspiring full-stack developer focusing on the
-              MERN stack. While I’m just starting out, I’m constantly building
-              projects to sharpen my skills and create user-friendly web
-              applications. I’m eager to grow, learn, and turn ideas into
-              functional, well-designed experiences.
+              I'm an aspiring full-stack developer focusing on the MERN stack. I
+              build projects to sharpen my skills and create user-friendly web
+              applications.
             </p>
             <p className="text-lg mb-8 leading-relaxed">
-              My journey in web development began with a fascination for
-              creating interactive interfaces. Today, I leverage modern
-              technologies to build scalable, performant applications that solve
-              real-world problems.
+              I leverage modern technologies to develop scalable, performant
+              applications that solve real-world problems.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -115,10 +111,12 @@ const AboutMe = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center p-4 glass-blur rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center p-4 glass-blur rounded-lg shadow-md hover:shadow-[0_0_15px_2px_rgba(71,37,244,0.6)] transition-shadow duration-300"
               >
                 <div className="mb-2">{card.icon}</div>
-                <h3 className="text-lg font-bold mb-1">{card.title}</h3>
+                <h3 className="text-lg text-center font-bold mb-1">
+                  {card.title}
+                </h3>
                 <p className="text-gray-600 text-sm text-center">
                   {card.description}
                 </p>
