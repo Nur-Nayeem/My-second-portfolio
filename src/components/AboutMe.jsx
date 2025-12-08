@@ -42,9 +42,9 @@ const AboutMe = () => {
       className="py-12 transition-colors duration-300 rounded-2xl mt-10"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
-          <div className="w-20 h-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] mx-auto"></div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-2">About Me</h2>
+          <div className="w-40 h-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -52,13 +52,10 @@ const AboutMe = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Who am I?</h3>
             <p className="text-lg mb-6 leading-relaxed">
-              I'm an aspiring full-stack developer focusing on the MERN stack. I
-              build projects to sharpen my skills and create user-friendly web
-              applications.
-            </p>
-            <p className="text-lg mb-8 leading-relaxed">
-              I leverage modern technologies to develop scalable, performant
-              applications that solve real-world problems.
+              I’m a passionate full-stack developer specializing in the MERN
+              stack. I enjoy turning ideas into clean, functional, and
+              user-friendly digital experiences. I constantly build projects to
+              improve my skills and explore new technologies.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">

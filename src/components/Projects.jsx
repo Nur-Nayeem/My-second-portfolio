@@ -9,9 +9,9 @@ const Projects = () => {
       className={`py-12 transition-colors duration-300 rounded-2xl mt-10`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Projects</h2>
-          <div className="w-20 h-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] mx-auto"></div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-2">Projects</h2>
+          <div className="w-40 h-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] mx-auto"></div>
           <p className="mt-4 text-lg max-w-2xl mx-auto">
             Here are some of my recent MERN stack projects. Each project
             demonstrates different aspects of full-stack development.

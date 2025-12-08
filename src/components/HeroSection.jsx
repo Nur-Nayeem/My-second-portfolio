@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="py-24 md:py-64 relative overflow-hidden">
+    <section id="home" className="py-24 md:py-32 relative overflow-hidden">
       {/* subtle background blobs */}
       <div className="absolute inset-0 -z-10 opacity-30 blur-3xl bg-linear-to-r from-[#632EE3]/30 via-[#9F62F2]/20 to-[#632EE3]/30" />
 
@@ -18,11 +18,6 @@ const HeroSection = () => {
           <h2 className="text-primary text-lg md:text-xl font-semibold">
             MERN Stack Developer
           </h2>
-
-          <p className="text-slate-600 md:text-lg max-w-md">
-            I create modern, responsive, and high-performance web applications
-            using the MERN stack with clean UI and seamless user experience.
-          </p>
 
           {/* BUTTONS */}
           <div className="mt-4 flex flex-wrap gap-4 md:justify-start justify-center">
@@ -45,7 +40,7 @@ const HeroSection = () => {
         {/* IMAGE SIDE */}
         <div className="flex justify-center md:justify-end">
           <div className="relative">
-            <div className="w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full p-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] shadow-glow">
+            <div className="w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] rounded-full p-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] shadow-glow">
               <div className="w-full h-full rounded-full overflow-hidden bg-white">
                 <img
                   src="https://avatars.githubusercontent.com/u/109820227?v=4"
